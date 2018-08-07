@@ -2,4 +2,10 @@ qt:   https://download.qt.io/development_releases/
 PySide:   https://pypi.org/project/PySide/
 pyside2:    https://download.qt.io/official_releases/QtForPython/pyside2/
 PyQt4:    https://pypi.org/project/PyQt4/
+          https://www.riverbankcomputing.com/software/pyqt/download
 PyQt5:    https://pypi.org/project/PyQt5/
+          https://www.riverbankcomputing.com/software/pyqt/download5
+          
+vs:   https://visualstudio.microsoft.com/zh-hans/vs/
+          
+3rd pythonlibs:   https://www.lfd.uci.edu/~gohlke/pythonlibs/
