@@ -1,1 +1,5 @@
-qt download URL:https://download.qt.io/development_releases/
+qt:   https://download.qt.io/development_releases/
+PySide:   https://pypi.org/project/PySide/
+pyside2:    https://download.qt.io/official_releases/QtForPython/pyside2/
+PyQt4:    https://pypi.org/project/PyQt4/
+PyQt5:    https://pypi.org/project/PyQt5/
