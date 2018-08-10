@@ -1,5 +1,12 @@
 PySide:   https://pypi.org/project/PySide/
-pyside2:    https://download.qt.io/official_releases/QtForPython/pyside2/
+pyside2:  https://download.qt.io/official_releases/QtForPython/pyside2/
+          https://wiki.qt.io/Qt_for_Python/GettingStarted
+          Pre-built Wheels
+                    Official release wheels of Qt For Python can be installed regularly via pip:
+                              pip install pyside2
+                    Pre-release (snapshot) wheels containing the latest code changes are available at http://download.qt.io/snapshots/ci/pyside/
+                    For example you can install the latest 5.11 snapshot wheel using:
+                              pip install --index-url=http://download.qt.io/snapshots/ci/pyside/5.11/latest/ pyside2 --trusted-host download.qt.io
 
 qt:   https://download.qt.io/development_releases/
 PyQt4:    https://pypi.org/project/PyQt4/
