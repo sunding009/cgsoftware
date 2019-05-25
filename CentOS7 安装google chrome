@@ -1,0 +1,26 @@
+CentOS7 安装google chrome
+1. 下载Chrome浏览器的rpm包
+https://www.google.cn/chrome/
+或者
+https://www.chrome64bit.com/index.php/google-chrome-64-bit-for-linux
+
+2. 安装Chrome浏览器
+rpm -ivh google-chrome-stable_current_x86_64.rpm
+
+如果出现下面错误消息,则表明缺少依赖包:
+[root@localhost Downloads]# rpm -ivh google-chrome-stable_current_x86_64.rpm 
+warning: google-chrome-stable_current_x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 7fac5991: NOKEY
+error: Failed dependencies:
+    libXss.so.1()(64bit) is needed by google-chrome-stable-67.0.3396.87-1.x86_64
+    libappindicator3.so.1()(64bit) is needed by google-chrome-stable-67.0.3396.87-1.x86_64
+    libnss3.so(NSS_3.22)(64bit) is needed by google-chrome-stable-67.0.3396.87-1.x86_64
+    libssl3.so(NSS_3.28)(64bit) is needed by google-chrome-stable-67.0.3396.87-1.x86_64
+复制代码
+针对错误消息中的每个依赖包,执行命令repoquery --nvr --whatprovides   <依赖文件>,安装输出包, such as:
+
+[root@localhost Downloads]# repoquery --nvr --whatprovides  libappindicator3.so.1
+libappindicator-gtk3-12.10.0-13.el7
+[root@localhost Downloads]# yum install -y libappindicator-gtk3-12.10.0-13.el7
+
+直到所有依赖包都安装完成,再执行命令:
+rpm -ivh google-chrome-stable_current_x86_64.rpm
